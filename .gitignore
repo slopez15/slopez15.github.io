@@ -1,4 +1,5 @@
 
 #Ignore Project config folders
-/.idea
-#
+.idea/
+*.DS_Store
+
