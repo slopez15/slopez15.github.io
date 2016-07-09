@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<!--
+This page is for web testing based on each concepts--
+probably will not cover all of them.
+-->
+
+<!-- HEAD -->
+<head>
+    <!-- HTML RELATED -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!-- STYLE SHEETS -->
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+
+    <style>
+        /*
+        selector.class#id
+        {
+            attribute: value;
+        }
+        */
+    </style>
+    <!-- SCRIPTS -->
+    <link rel="script">
+    <script>
+        /*
+         class{
+         method(){
+         }
+         }
+         */
+    </script>
+
+    <!-- EXTERNAL STYLE SHEETS -->
+    <!--
+        1. To see how style sheets change the page style,
+        try uncommenting one of the following style sheets
+        and commenting out the above style sheets.
+        OR
+        2.
+        Click the switch style sheet button.
+        -->
+    <!--
+        <link href="https://www.girldevelopit.com/assets/application-7eef66736a7863ecee2b71dd2c62d8a6.css" rel="stylesheet" type="text/css"/>
+        -->
+</head>
+
+<!-- BODY -->
+<body>
+<div class="intro">
+    <h1>Intro</h1>
+    <p>Go through the page and try turning off
+        css (cascading style sheets),
+        then turn off js (javascript),
+        then both.<br>
+        This page was written in the following order: html,css,js.
+    </p>
+</div>
+
+<div id="table of contents">
+    <h1>Table of Contents</h1>
+    <!--chapter list-->
+    <!--
+        ordered list,
+        section # and section names
+    -->
+    <ol>
+        <li><a href="#1">Structure</a></li>
+        <li><a href="#2">Text</a></li>
+        <li><a href="#3">Lists</a></li>
+        <li><a href="#4">Links</a></li>
+        <li><a href="#5">Images</a></li>
+        <li><a href="#6">Tables</a></li>
+        <li><a href="#7">Forms</a></li>
+        <li><a href="#8">Extra Markup</a></li>
+        <li><a href="#9">Flash, Video & Audio</a></li>
+        <li><a href="#10">Introducing CSS</a></li>
+        <li><a href="#11">Color</a></li>
+        <li><a href="#12">Text</a></li>
+        <li><a href="#13">Boxes</a></li>
+        <li><a href="#14">Tables, Lists & Forms</a></li>
+        <li><a href="#15">Layout</a></li>
+        <li><a href="#16">Images</a></li>
+        <li><a href="#17">HTML5 Layout</a></li>
+    </ol>
+    <h3></h3>
+
+</div>
+<div class="chapter">
+    <hr/>
+    <hr/>
+    <div id="1">
+        <h2>Structure</h2>
+        <div class="description">
+            The structure of a html <b>element</b> consists of:
+            <br/>
+            &nbsp;&nbsp;&lt;tag
+            <!-- notice attributeName text is within font tags--they are deprecated in html5.
+                if you change the html version to an older version,
+                you may be able to use the font tag-->
+            <font color="#00CC33"><span id="attribute-name">attributeName</span></font>="
+            <span id="attribute-value" style="color: orangered">attributeValue</span>"&gt;insert
+            your text here&lt;/tag&gt;
+            <br/><br/>
+            The structure of a html <b>page)</b> consists of:
+            <br/>
+            &nbsp;&nbsp;<em>html</em>,<em>head</em>, and <em>body</em>
+            <br/>
+            where in head, you can include the page <em>title</em> (shown in the window tab)
+            <br/>
+
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="2">
+        <h2>Text</h2>
+        <div class="description">
+            <div id="headings">
+                <p>Style should be written in css, unless need to emphasize in text.</p>
+                <h3><p>Six levels of headings:</p></h3>
+                <h1>&lt;h1&gt;</h1>
+                <h2>&lt;h2&gt;</h2>
+                <h3>&lt;h3&gt;</h3>
+                <h4>&lt;h4&gt;</h4>
+                <h5>&lt;h5&gt;</h5>
+                <h6>&lt;h6&gt;</h6>
+            </div>
+            <div id="html-text-style">
+                <h3><p>Text specific:</p></h3>
+                <hr/>
+                &lt;hr/&gt;
+                <br/>&lt;br/&gt;<br/>
+                <b>&lt;b&gt;</b>
+                <br/>
+                <i>&lt;i&gt;</i>
+                <br/>
+                <sup>&lt;sup&gt;</sup>
+                <sub>&lt;sub&gt;</sub>
+                <br/>
+                <strong>&lt;strong&gt;</strong>
+                <br/>
+                <em>&lt;em&gt;</em>
+                <br/>
+                <p>
+                <h3>Meaning related:</h3>
+                ins = inserted content<br/>
+                del = deleted content<br/>
+                s = no longer relevant <br/>
+                </p>
+                <ins>&lt;ins&gt;</ins>
+                <br/>
+                <del>&lt;del&gt;</del>
+                <br/>
+                <s>&lt;s&gt;</s>
+                <br/>
+                <h3><p>Quotations, definition, abbreviate, and cite:</p></h3>
+                <blockquote cite="#">
+                    Blockquote. <br>
+                    (<dfn>long term to define</dfn>) <abbr title="long term">short term</abbr>, according to <cite>cited
+                    ref</cite>
+                    is, <q cite="#">quote.</q>
+                </blockquote>
+                <p>Plus many others...</p>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="3">
+        <h2>Lists</h2>
+        <div class="description">
+            <h3><p>Ordered Lists:</p></h3>
+            <ol>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+            </ol>
+            <h3><p>Unordered Lists:</p></h3>
+            <ul>
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+            </ul>
+            <h3><p>Definition Lists:</p></h3>
+            <dl>
+                <dt>definition term 1</dt>
+                <dd>definition definition 1</dd>
+                <dt>definition term 2</dt>
+                <dd>definition definition 2</dd>
+                <dt>definition term 3</dt>
+                <dd>definition definition 3</dd>
+            </dl>
+            <h3><p>Nested Lists:</p></h3>
+            <p>Ordered-nested</p>
+            <ol>
+                <li>list item 1
+                    <ol>
+                        <li>list item 1.1</li>
+                        <li>list item 1.2</li>
+                    </ol>
+                </li>
+                <li>list item 2
+                    <ul>
+                        <li>list item 2.1</li>
+                        <li>list item 2.2</li>
+                    </ul>
+                </li>
+                <li>list item 3
+                    <dl>
+                        <dt>definition term1</dt>
+                        <dd>definition definition 1</dd>
+                        <dd>definition definition 2</dd>
+                    </dl>
+                </li>
+            </ol>
+            <p>Unordered-nested</p>
+            <ul>
+                <li>list item 1
+                    <ol>
+                        <li>list item 1.1</li>
+                        <ul>
+                            <li>list item 2.1.1</li>
+                        </ul>
+                        <li>list item 1.2</li>
+                    </ol>
+                </li>
+                <li>list item 2
+                    <ul>
+                        <li>list item 2.1</li>
+                        <ul>
+                            <li>list item 2.1.1</li>
+                        </ul>
+                        <li>list item 2.2</li>
+                    </ul>
+                </li>
+                <li>list item 3
+                    <dl>
+                        <dt>definition term1</dt>
+                        <dd>definition definition 1</dd>
+                        <dd>definition definition 2</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="4">
+        <h2>Links</h2>
+        <div class="description">
+            <ul>
+                <li><a href="index.html">Same folder: "index.html". Go to this page</a></li>
+                <li>child folder: "folder/file.ext"</li>
+                <li>grandchild folder: "folder/folder/file.ext"</li>
+                <li>parent folder: "../file.ext"</li>
+                <li>grandparent folder: "../../file.ext"</li>
+                <li><a href="mailto:user@domain">Email user@domain</a></li>
+                <li><a href="index.html" target="_parent">target="_parent"</a></li>
+                <li><a href="index.html" target="_self">target="_self"</a></li>
+                <li><a href="index.html" target="_top">target="_top"</a></li>
+                <li><a href="index.html" target="_blank">target="_blank"</a></li>
+                <li><a href="#table of contents">same page linking--table of contents is best example</a></li>
+                <ul>tip: IDs only since they are unique, <br/>classes are not unique
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="5">
+        <h2>Images</h2>
+        <div class="description">
+            <p>All images subject to copyright &copy;
+                and usually stored in <i>images</i> folder<br/>
+                Size: size should be in how you want it--to not waste space. Keep in mind of vector images. <br/>
+            <ul>Format:
+                <li>jpeg: real world photos--complex photo. <br></li>
+                <li>png/gif: created and few colors--simple photos.<br></li>
+            </ul>
+            <dl>
+                <dt>gif</dt>
+                <dd>a series of images</dd>
+            </dl>
+            <ul>Stock photos
+                <li>www.istockphoto.com</li>
+                <li>www.gettyimage.com</li>
+                <li>www.veer.com</li>
+                <li>www.sxc.hu</li>
+                <li>www.fotolia.com</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="6">
+        <h2>Tables</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="7">
+        <h2>Forms</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="8">
+        <h2>Extra Markup</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="9">
+        <h2>Flash, Video & Audio</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="10">
+        <h2>Introducing CSS</h2>
+        <div class="description">
+            The structure of a css <b>rule</b> consists of:
+            <br/>
+            &nbsp;&nbsp;
+            <span id="selector">selector</span>{
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="property">property</span>: <span id="property-value">value</span>;
+            <br/>&nbsp;&nbsp;
+            }
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="11">
+        <h2>Color</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="12">
+        <h2>Text</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="13">
+        <h2>Boxes</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="14">
+        <h2>Tables, Lists & Forms</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="15">
+        <h2>Layout</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="16">
+        <h2>Images</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="17">
+        <h2>HTML5 Layout</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="18">
+        <h2>Process & Design</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    <div id="19">
+        <h2>Practical Information</h2>
+        <div class="description">
+            .
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

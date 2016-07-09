@@ -1,0 +1,25 @@
+
+div.chapter {
+    border: 20px solid #66cccc;
+}
+
+/*Key Words*/
+span#attribute-name {
+    color: #00CC33;
+}
+
+span#attribute-value {
+    color: #ff6d10;
+}
+
+span#selector {
+    color: #00CC33;
+}
+
+span#property {
+    color: #ff3e33;
+}
+
+span#property-value {
+    color: #0088dd;
+}
